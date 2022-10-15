@@ -3,8 +3,25 @@ import Head from "next/head";
 
 import Navbar from "../components/Navbar";
 import Menu from "../components/Menu";
+import Discount from "../components/Discount";
+import IDiscount from "../interfaces/IDiscount";
+import Order from "../components/Order";
 
 const Home: NextPage = () => {
+  const discounts: IDiscount[] = [
+    {
+      contentPosition: "right",
+      title: "Discount up to 50% All Menu",
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      buttonContent: "Read more",
+    },
+    {
+      contentPosition: "left",
+      title: "December's Promo! Buy 1 Get 1 Free!",
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      buttonContent: "Read more",
+    },
+  ];
   return (
     <section>
       <Head>
@@ -17,6 +34,10 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <Menu />
+      {discounts.map((discount, index) => (
+        <Discount key={index} {...discount} />
+      ))}
+      <Order />
     </section>
   );
 };
