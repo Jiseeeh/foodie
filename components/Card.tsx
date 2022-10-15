@@ -15,7 +15,7 @@ const Card: React.FC<CardProps> = (props) => {
       <section className="w-52 h-80 flex flex-col items-center transition ease-in-out hover:-translate-y-1 hover:scale-110">
         <section className="w-full h-52 relative">
           <Image
-            className="object-cover"
+            className="object-cover  rounded-t-lg"
             src={props.imgSrc}
             layout="fill"
             alt={props.imgAlt}
