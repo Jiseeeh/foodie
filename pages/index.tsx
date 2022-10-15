@@ -1,9 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
+import Navbar from "../components/Navbar";
+import Menu from "../components/Menu";
+
 const Home: NextPage = () => {
   return (
-    <div>
+    <section>
       <Head>
         <title>Foodie</title>
         <meta
@@ -12,7 +15,9 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/logo.svg" />
       </Head>
-    </div>
+      <Navbar />
+      <Menu />
+    </section>
   );
 };
 
