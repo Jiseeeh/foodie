@@ -9,6 +9,9 @@ module.exports = {
       backgroundImage: {
         "nav-wave": "url('/waves.svg')",
       },
+      aspectRatio: {
+        "960/300": "960 / 300",
+      },
     },
   },
   plugins: [],
