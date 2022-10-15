@@ -1,6 +1,7 @@
 import React from "react";
 
 import Card from "./Card";
+import Button from "./Button";
 
 const Menu: React.FC = () => {
   const cards = [
@@ -35,9 +36,7 @@ const Menu: React.FC = () => {
           <Card key={index} {...card} />
         ))}
       </section>
-      <button className="my-7 p-2 w-40 text-white rounded-full transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 bg-dimmed-blue">
-        Show more
-      </button>
+      <Button content="Show more" />
     </main>
   );
 };
