@@ -16,6 +16,9 @@ module.exports = {
         "dimmed-blue": "#6888b1",
         "dimmed-green": "#e0ecc1",
       },
+      textColor: {
+        "dimmed-blue": "#6888b1",
+      },
     },
   },
   plugins: [],
