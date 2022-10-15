@@ -12,6 +12,9 @@ module.exports = {
       aspectRatio: {
         "960/300": "960 / 300",
       },
+      backgroundColor : {
+        "dimmed-blue" : "#6888b1"
+      }
     },
   },
   plugins: [],
