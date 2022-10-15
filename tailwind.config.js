@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "nav-wave": "url('/waves.svg')",
+        "ramen-egg": "url('/ramen-2.jpg')",
+        ramen: "url('/ramen-1.jpg')",
       },
       aspectRatio: {
         "960/300": "960 / 300",
