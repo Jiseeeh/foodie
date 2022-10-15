@@ -56,8 +56,8 @@ const Navbar: React.FC = () => {
           className="text-center hidden w-full md:flex md:flex-row md:justify-end"
           ref={ulElement}
         >
-          {liELements.map((element) => (
-            <li className={element.class} onClick={element.onclick}>
+          {liELements.map((element, index) => (
+            <li key={index} className={element.class} onClick={element.onclick}>
               {element.title}
             </li>
           ))}
