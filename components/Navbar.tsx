@@ -6,6 +6,13 @@ const Navbar: React.FC = () => {
   const ulElement = useRef<HTMLUListElement>(null);
   const liClass =
     "mr-7 text-white w-full md:w-auto cursor-pointer md:scale-hover";
+  const makeVisibleClasses = [
+    "flex",
+    "flex-col",
+    "opacity-100",
+    "visible",
+    "max-h-screen",
+  ];
   const liELements = [
     {
       title: "Home",
@@ -30,17 +37,17 @@ const Navbar: React.FC = () => {
   ];
 
   const toggleMenu = () => {
-    ulElement?.current?.classList.add("flex", "flex-col");
-    ulElement?.current?.classList.remove("hidden");
+    ulElement?.current?.classList.add(...makeVisibleClasses);
+    ulElement?.current?.classList.remove("invisible");
   };
 
   const unToggleMenu = () => {
-    ulElement?.current?.classList.remove("flex");
-    ulElement?.current?.classList.add("hidden");
+    ulElement?.current?.classList.remove(...makeVisibleClasses);
+    ulElement?.current?.classList.add("invisible");
   };
 
   return (
-    <nav id="#" className="sticky top-0 z-50">
+    <nav id="#" className="z-50 sticky top-0 ">
       {/* nav */}
       <section className="flex flex-wrap bg-dimmed-blue md:flex-nowrap md:items-center ">
         <Image src="/logo.svg" width={60} height={60} />
@@ -60,7 +67,7 @@ const Navbar: React.FC = () => {
           />
         </button>
         <ul
-          className="text-center hidden w-full md:flex md:flex-row md:justify-end"
+          className="text-center max-h-0 w-full flex invisible opacity-0 transition-all ease-in-out duration-700 md:visible md:opacity-100 md:flex md:flex-row md:justify-end md:items-center"
           ref={ulElement}
         >
           {liELements.map((element, index) => (
