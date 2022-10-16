@@ -9,9 +9,9 @@ module.exports = {
       backgroundImage: {
         "nav-wave": "url('/waves.svg')",
         "testimonial-wave": "url('/testimonial-wave.svg')",
-        "ramen-egg": "url('/ramen-2.jpg')",
-        ramen: "url('/ramen-1.jpg')",
-        "food-bg": "url('/food-bg.jpg')",
+        "ramen-egg": "url('/ramen-2.webp')",
+        ramen: "url('/ramen-1.webp')",
+        "food-bg": "url('/food-bg.webp')",
       },
       aspectRatio: {
         "960/300": "960 / 300",

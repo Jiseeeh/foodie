@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
           and was made by&nbsp;
           <a className="italic font-bold" href="https://github.com/Jiseeeh">
             Jiseeeh!{" "}
-            <Image src="/heart.png" alt="heart icon" width={10} height={10} />
+            <Image src="/heart.webp" alt="heart icon" width={10} height={10} />
           </a>
         </p>
       </section>
