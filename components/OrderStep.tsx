@@ -8,7 +8,7 @@ interface OrderStepProps {
 
 const OrderStep: React.FC<OrderStepProps> = (props) => {
   return (
-    <section className="p-3 flex flex-col items-center">
+    <section className="p-3 flex flex-col items-center scale-hover">
       <section className="h-14 w-14 text-dimmed-blue text-3xl font-bold rounded-full bg-white grid place-items-center md:h-20 md:w-20">
         <p>{props.stepNumber}</p>
       </section>

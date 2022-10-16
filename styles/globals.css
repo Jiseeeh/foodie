@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
+
+.scale-hover {
+  @apply transition;
+  @apply ease-in-out;
+  @apply hover:translate-y-1;
+  @apply hover:scale-110;
+}
+
 @tailwind utilities;
