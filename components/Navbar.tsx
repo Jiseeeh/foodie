@@ -27,8 +27,19 @@ const Navbar: React.FC = () => {
       linkTo: "#order",
     },
   ];
+
+  const toggleMenu = () => {
+    ulElement?.current?.classList.add("flex", "flex-col");
+    ulElement?.current?.classList.remove("hidden");
+  };
+
+  const unToggleMenu = () => {
+    ulElement?.current?.classList.remove("flex");
+    ulElement?.current?.classList.add("hidden");
+  };
+
   return (
-    <nav id="#" className=" sticky top-0 ">
+    <nav id="#" className="sticky top-0 z-50">
       {/* nav */}
       <section className="flex flex-wrap bg-dimmed-blue md:flex-nowrap md:items-center ">
         <Image src="/logo.svg" width={60} height={60} />
@@ -38,13 +49,7 @@ const Navbar: React.FC = () => {
           onClick={() => {
             setIsMenuToggled((prevIsMenuToggled) => !prevIsMenuToggled);
 
-            if (isMenuToggled) {
-              ulElement?.current?.classList.remove("flex");
-              ulElement?.current?.classList.add("hidden");
-            } else {
-              ulElement?.current?.classList.add("flex", "flex-col");
-              ulElement?.current?.classList.remove("hidden");
-            }
+            isMenuToggled ? unToggleMenu() : toggleMenu();
           }}
         >
           <Image
@@ -59,7 +64,15 @@ const Navbar: React.FC = () => {
         >
           {liELements.map((element, index) => (
             <li key={index} className={element.class}>
-              <a href={element.linkTo}>{element.title}</a>
+              <a
+                href={element.linkTo}
+                onClick={() => {
+                  setIsMenuToggled((prevIsMenuToggled) => !prevIsMenuToggled);
+                  unToggleMenu();
+                }}
+              >
+                {element.title}
+              </a>
             </li>
           ))}
         </ul>
