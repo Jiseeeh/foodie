@@ -29,7 +29,10 @@ const Menu: React.FC = () => {
   ];
 
   return (
-    <main className="flex flex-col items-center bg-dimmed-green md:-mt-40 lg:-mt-52 xl:-mt-60">
+    <main
+      id="menu"
+      className="flex flex-col items-center bg-dimmed-green md:-mt-40 lg:-mt-52 xl:-mt-60"
+    >
       <h1 className="text-3xl mb-4 text-dimmed-blue">Popular Menu</h1>
       <section className="grid gap-5 md:grid-cols-3">
         {cards.map((card, index) => (
