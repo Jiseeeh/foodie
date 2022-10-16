@@ -37,6 +37,15 @@ const Home: NextPage = () => {
           name="description"
           content="Healthy foods for you! Order now and you'll get 50% discount!"
         />
+        <meta name="robots" content="all" />
+        <meta
+          property="og:description"
+          content="The best and all healthy foods are served!"
+        />
+        <meta
+          property="og:image"
+          content="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg?w=1155&h=1528"
+        />
         <link rel="icon" href="/logo.svg" />
       </Head>
       <ScrollToTop smooth style={{ display: "grid", placeItems: "center" }} />
