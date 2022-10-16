@@ -35,7 +35,7 @@ const Home: NextPage = () => {
         <title>Foodie</title>
         <meta
           name="description"
-          content="Healthy foods for you! Order now and you'll get 50% discount!"
+          content="Foodie delivers faster than light. Healthy Foods near you. Healthy foods for you! Order now and you'll get 50% discount!"
         />
         <meta name="robots" content="all" />
         <meta
