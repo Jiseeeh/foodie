@@ -4,32 +4,33 @@ import Image from "next/image";
 const Navbar: React.FC = () => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const ulElement = useRef<HTMLUListElement>(null);
-  const liClass = "mr-7 text-white w-full md:w-auto cursor-pointer";
+  const liClass = "mr-7 text-white w-full md:w-auto cursor-pointer scale-hover";
   const liELements = [
     {
       title: "Home",
       class: liClass,
-      onclick: () => {},
+      linkTo: "#",
     },
     {
       title: "Our Menu",
       class: liClass,
-      onclick: () => {},
+      linkTo: "#menu",
     },
     {
       title: "Promo",
       class: liClass,
-      onclick: () => {},
+      linkTo: "#promo",
     },
     {
       title: "Order",
       class: liClass,
-      onclick: () => {},
+      linkTo: "#order",
     },
   ];
   return (
-    <nav>
-      <section className="flex flex-wrap md:flex-nowrap md:items-center bg-dimmed-blue">
+    <nav id="#" className=" sticky top-0 ">
+      {/* nav */}
+      <section className="flex flex-wrap bg-dimmed-blue md:flex-nowrap md:items-center ">
         <Image src="/logo.svg" width={60} height={60} />
         <h1 className="self-center">FOODIE</h1>
         <button
@@ -57,23 +58,12 @@ const Navbar: React.FC = () => {
           ref={ulElement}
         >
           {liELements.map((element, index) => (
-            <li key={index} className={element.class} onClick={element.onclick}>
-              {element.title}
+            <li key={index} className={element.class}>
+              <a href={element.linkTo}>{element.title}</a>
             </li>
           ))}
         </ul>
       </section>
-      <section className="h-80 w-full bg-dimmed-blue text-center text-white flex flex-col justify-center items-center ">
-        <h1 className="mb-3 text-4xl lg:text-5xl">HEALTHY FOOD RESTAURANT</h1>
-        <p className="text-1xl max-w-md lg:text-2xl ">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Consectetur architecto
-          quidem nesciunt nulla illo dicta atque aliquam! Distinctio, quae
-          numquam.
-        </p>
-      </section>
-      {/* spacer */}
-      <section className="w-full bg-nav-wave bg-no-repeat bg-cover bg-center aspect-960/300"></section>
     </nav>
   );
 };
