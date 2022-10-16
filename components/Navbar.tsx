@@ -4,7 +4,8 @@ import Image from "next/image";
 const Navbar: React.FC = () => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const ulElement = useRef<HTMLUListElement>(null);
-  const liClass = "mr-7 text-white w-full md:w-auto cursor-pointer scale-hover";
+  const liClass =
+    "mr-7 text-white w-full md:w-auto cursor-pointer md:scale-hover";
   const liELements = [
     {
       title: "Home",
@@ -67,7 +68,7 @@ const Navbar: React.FC = () => {
               <a
                 href={element.linkTo}
                 onClick={() => {
-                  setIsMenuToggled((prevIsMenuToggled) => !prevIsMenuToggled);
+                  setIsMenuToggled(false);
                   unToggleMenu();
                 }}
               >
