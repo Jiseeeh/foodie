@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   const headingClass = "mx-2 text-xl md:text-2xl";
@@ -9,10 +10,27 @@ const Footer: React.FC = () => {
       <section className="p-7">
         <h1 className={`${headingClass} mx-0`}>ABOUT</h1>
         <p className="md:max-w-2xl">
-          Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do
-          eiusmod tempor incididunt ultimam quantum Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Aut suscipit voluptatem hic aspernatur!
-          Ipsa nulla dolorem nam dignissimos voluptatum laborum.
+          Some of the icons were from&nbsp;
+          <a
+            className="italic font-bold"
+            href="https://icons8.com/"
+            target="_blank"
+          >
+            Icons8&nbsp;
+          </a>
+          and&nbsp;
+          <a className="italic font-bold" href="https://lordicon.com/">
+            Lordicon.&nbsp;
+          </a>
+          Web design was from&nbsp;
+          <a className="italic font-bold" href="http://www.freepik.com">
+            Freepik&nbsp;
+          </a>
+          and was made by&nbsp;
+          <a className="italic font-bold" href="https://github.com/Jiseeeh">
+            Jiseeeh!{" "}
+            <Image src="/heart.png" alt="heart icon" width={10} height={10} />
+          </a>
         </p>
       </section>
       <section className="p-7 text-center flex justify-center">
