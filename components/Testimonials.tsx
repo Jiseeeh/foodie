@@ -17,18 +17,21 @@ const Testimonial: React.FC = () => {
         {/* icons */}
         <section className="flex justify-center items-center">
           <Image
+            className="scale-hover"
             src="/fb.svg"
             alt="fb icon"
             width={iconSize}
             height={iconSize}
           />
           <Image
+            className="scale-hover"
             src="/twitter.svg"
             alt="twitter icon"
             width={iconSize}
             height={iconSize}
           />
           <Image
+            className="scale-hover"
             src="/instagram.svg"
             alt="instagram icon"
             width={iconSize}
