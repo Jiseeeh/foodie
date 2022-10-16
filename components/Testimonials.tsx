@@ -7,7 +7,7 @@ const Testimonial: React.FC = () => {
   return (
     <section>
       <section className="p-3 min-h-screen text-dimmed-blue flex flex-col justify-center items-center bg-dimmed-green">
-        <Image src="/quote.svg" width={70} height={70} />
+        <Image src="/quote.svg" width={70} height={70} alt="blue quote icon" />
         <p className="text-xl md:text-3xl md:max-w-2xl">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

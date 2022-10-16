@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
     <nav id="#" className="z-50 sticky top-0 ">
       {/* nav */}
       <section className="flex flex-wrap bg-dimmed-blue md:flex-nowrap md:items-center ">
-        <Image src="/logo.svg" width={60} height={60} />
+        <Image src="/logo.svg" width={60} height={60} alt="Foodie logo" />
         <h1 className="text-white text-2xl font-bold self-center">FOODIE</h1>
         <button
           className="ml-auto md:hidden"
@@ -65,6 +65,7 @@ const Navbar: React.FC = () => {
             src={isMenuToggled ? "/menu-close.svg" : "/menu-open.svg"}
             width={40}
             height={40}
+            alt="Menu logo"
           />
         </button>
         <ul
