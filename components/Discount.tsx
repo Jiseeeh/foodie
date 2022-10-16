@@ -18,7 +18,7 @@ const Discount: React.FC<IDiscount> = (props) => {
     </>
   );
   return (
-    <article className="h-screen relative">
+    <article id="promo" className="h-screen relative">
       {props.contentPosition === "right" ? (
         <>
           <section className={leftSide}></section>
