@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "nav-wave": "url('/waves.svg')",
+        "testimonial-wave": "url('/testimonial-wave.svg')",
         "ramen-egg": "url('/ramen-2.jpg')",
         ramen: "url('/ramen-1.jpg')",
         "food-bg": "url('/food-bg.jpg')",
