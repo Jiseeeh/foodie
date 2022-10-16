@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import Navbar from "../components/Navbar";
+import Heading from "../components/Heading";
 import Menu from "../components/Menu";
 import Discount from "../components/Discount";
 import IDiscount from "../interfaces/IDiscount";
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
     },
   ];
   return (
-    <section>
+    <section className="relative">
       <Head>
         <title>Foodie</title>
         <meta
@@ -38,6 +39,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <Navbar />
+      <Heading />
       <Menu />
       {discounts.map((discount, index) => (
         <Discount key={index} {...discount} />
@@ -46,6 +48,13 @@ const Home: NextPage = () => {
       <FreeDelivery />
       <Testimonial />
       <Footer />
+      <style global jsx>
+        {`
+          html {
+            scroll-behavior: smooth;
+          }
+        `}
+      </style>
     </section>
   );
 };
