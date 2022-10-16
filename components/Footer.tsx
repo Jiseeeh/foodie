@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 
 const Footer: React.FC = () => {
-  const headingClass = "mx-2 text-xl md:text-2xl";
+  const headingClass = "";
   const unOrderedListClass = "mx-4";
 
   return (
     <footer className="text-white flex flex-col bg-dimmed-blue md:flex-row md:justify-between ">
       <section className="p-7">
-        <h1 className={`${headingClass} mx-0`}>ABOUT</h1>
+        <h1 className="text-xl md:text-2xl mx-0">ABOUT</h1>
         <p className="md:max-w-2xl">
           Some of the icons were from&nbsp;
           <a className="italic font-bold" href="https://icons8.com/">
@@ -31,7 +31,6 @@ const Footer: React.FC = () => {
       </section>
       <section className="p-7 text-center flex justify-center">
         <ul className={unOrderedListClass}>
-          <h1 className={headingClass}>ABOUT</h1>
           <li>Team</li>
           <li>Join us</li>
           <li>Ethic</li>
@@ -39,7 +38,6 @@ const Footer: React.FC = () => {
         </ul>
 
         <ul className={unOrderedListClass}>
-          <h1 className={headingClass}>ABOUT</h1>
           <li>Team</li>
           <li>Join us</li>
           <li>Ethic</li>
@@ -47,7 +45,6 @@ const Footer: React.FC = () => {
         </ul>
 
         <ul className={unOrderedListClass}>
-          <h1 className={headingClass}>ABOUT</h1>
           <li>Team</li>
           <li>Join us</li>
           <li>Ethic</li>
