@@ -10,6 +10,7 @@ import Order from "../components/Order";
 import FreeDelivery from "../components/FreeDelivery";
 import Testimonial from "../components/Testimonials";
 import Footer from "../components/Footer";
+import ScrollToTop from "react-scroll-to-top";
 
 const Home: NextPage = () => {
   const discounts: IDiscount[] = [
@@ -38,6 +39,7 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/logo.svg" />
       </Head>
+      <ScrollToTop smooth style={{ display: "grid", placeItems: "center" }} />
       <Navbar />
       <Heading />
       <Menu />
