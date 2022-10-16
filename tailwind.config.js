@@ -10,6 +10,7 @@ module.exports = {
         "nav-wave": "url('/waves.svg')",
         "ramen-egg": "url('/ramen-2.jpg')",
         ramen: "url('/ramen-1.jpg')",
+        "food-bg": "url('/food-bg.jpg')",
       },
       aspectRatio: {
         "960/300": "960 / 300",
