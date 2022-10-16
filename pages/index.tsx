@@ -8,6 +8,7 @@ import IDiscount from "../interfaces/IDiscount";
 import Order from "../components/Order";
 import FreeDelivery from "../components/FreeDelivery";
 import Testimonial from "../components/Testimonials";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   const discounts: IDiscount[] = [
@@ -44,6 +45,7 @@ const Home: NextPage = () => {
       <Order />
       <FreeDelivery />
       <Testimonial />
+      <Footer />
     </section>
   );
 };
