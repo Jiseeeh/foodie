@@ -11,12 +11,14 @@ const Home: NextPage = () => {
   const discounts: IDiscount[] = [
     {
       contentPosition: "right",
+      background: "bg-ramen-egg",
       title: "Discount up to 50% All Menu",
       desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
       buttonContent: "Read more",
     },
     {
       contentPosition: "left",
+      background: "bg-ramen",
       title: "December's Promo! Buy 1 Get 1 Free!",
       desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
       buttonContent: "Read more",

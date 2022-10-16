@@ -4,7 +4,7 @@ import Button from "./Button";
 import IDiscount from "../interfaces/IDiscount";
 
 const Discount: React.FC<IDiscount> = (props) => {
-  const leftSide = "h-1/2 bg-ramen bg-cover md:h-full md:w-1/2";
+  const leftSide = `h-1/2 ${props.background} bg-cover md:h-full md:w-1/2`;
   const rightSide =
     "h-1/2 p-3 flex flex-col md:h-full md:justify-center bg-white md:w-1/2";
   // this class is added to the side to reverse the position
