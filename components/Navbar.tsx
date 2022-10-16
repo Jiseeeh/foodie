@@ -6,13 +6,14 @@ const Navbar: React.FC = () => {
   const ulElement = useRef<HTMLUListElement>(null);
   const liClass =
     "mr-7 text-white w-full md:w-auto cursor-pointer md:scale-hover";
-  const makeVisibleClasses = [
+  const visibleClasses = [
     "flex",
     "flex-col",
     "opacity-100",
     "visible",
     "max-h-screen",
   ];
+  const invisibleClasses = ["invisible", "opacity-0", "max-h-0"];
   const liELements = [
     {
       title: "Home",
@@ -37,13 +38,13 @@ const Navbar: React.FC = () => {
   ];
 
   const toggleMenu = () => {
-    ulElement?.current?.classList.add(...makeVisibleClasses);
-    ulElement?.current?.classList.remove("invisible");
+    ulElement?.current?.classList.add(...visibleClasses);
+    ulElement?.current?.classList.remove(...invisibleClasses);
   };
 
   const unToggleMenu = () => {
-    ulElement?.current?.classList.remove(...makeVisibleClasses);
-    ulElement?.current?.classList.add("invisible");
+    ulElement?.current?.classList.remove(...visibleClasses);
+    ulElement?.current?.classList.add(...invisibleClasses);
   };
 
   return (
@@ -51,7 +52,7 @@ const Navbar: React.FC = () => {
       {/* nav */}
       <section className="flex flex-wrap bg-dimmed-blue md:flex-nowrap md:items-center ">
         <Image src="/logo.svg" width={60} height={60} />
-        <h1 className="self-center">FOODIE</h1>
+        <h1 className="text-white text-2xl font-bold self-center">FOODIE</h1>
         <button
           className="ml-auto md:hidden"
           onClick={() => {
@@ -67,7 +68,7 @@ const Navbar: React.FC = () => {
           />
         </button>
         <ul
-          className="text-center max-h-0 w-full flex invisible opacity-0 transition-all ease-in-out duration-700 md:visible md:opacity-100 md:flex md:flex-row md:justify-end md:items-center"
+          className="text-center  w-full flex max-h-0 invisible opacity-0 transition-all ease-in-out duration-700  md:visible md:opacity-100 md:flex md:flex-row md:justify-end md:items-center"
           ref={ulElement}
         >
           {liELements.map((element, index) => (
