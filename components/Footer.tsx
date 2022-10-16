@@ -11,11 +11,7 @@ const Footer: React.FC = () => {
         <h1 className={`${headingClass} mx-0`}>ABOUT</h1>
         <p className="md:max-w-2xl">
           Some of the icons were from&nbsp;
-          <a
-            className="italic font-bold"
-            href="https://icons8.com/"
-            target="_blank"
-          >
+          <a className="italic font-bold" href="https://icons8.com/">
             Icons8&nbsp;
           </a>
           and&nbsp;
