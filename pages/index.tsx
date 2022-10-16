@@ -6,6 +6,7 @@ import Menu from "../components/Menu";
 import Discount from "../components/Discount";
 import IDiscount from "../interfaces/IDiscount";
 import Order from "../components/Order";
+import FreeDelivery from "../components/FreeDelivery";
 
 const Home: NextPage = () => {
   const discounts: IDiscount[] = [
@@ -40,6 +41,7 @@ const Home: NextPage = () => {
         <Discount key={index} {...discount} />
       ))}
       <Order />
+      <FreeDelivery />
     </section>
   );
 };
