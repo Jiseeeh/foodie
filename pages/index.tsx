@@ -37,7 +37,11 @@ const Home: NextPage = () => {
           name="description"
           content="Foodie delivers faster than light. Healthy Foods near you. Healthy foods for you! Order now and you'll get 50% discount!"
         />
-        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="keywords"
+          content="Foodie, Healthy Foods, Free Delivery, Foods near me, Healthy Foods near me, "
+        ></meta>
         <meta
           property="og:description"
           content="The best and all healthy foods are served!"
