@@ -14,7 +14,6 @@ const Discount: React.FC<IDiscount> = (props) => {
       <h1 className="mb-3 text-2xl font-bold md:text-4xl">{props.title}</h1>
       <p className="md:text-2xl">{props.desc}</p>
       <Button content={props.buttonContent} />
-      <hr></hr>
     </>
   );
   return (
