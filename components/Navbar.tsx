@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
           />
         </button>
         <ul
-          className="text-center  w-full flex max-h-0 invisible opacity-0 transition-all ease-in-out duration-700  md:visible md:opacity-100 md:flex md:flex-row md:justify-end md:items-center"
+          className="text-center text-lg w-full flex max-h-0 invisible opacity-0 transition-all ease-in-out duration-700  md:visible md:opacity-100 md:flex md:flex-row md:justify-end md:items-center"
           ref={ulElement}
         >
           {liELements.map((element, index) => (
