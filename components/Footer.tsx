@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           <a className="italic font-bold" href="http://www.freepik.com">
             Freepik&nbsp;
           </a>
-          and was made by&nbsp;
+          and was built by&nbsp;
           <a className="italic font-bold" href="https://github.com/Jiseeeh">
             Jiseeeh!{" "}
             <Image src="/heart.webp" alt="heart icon" width={10} height={10} />
