@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
         <Image src="/logo.svg" width={60} height={60} alt="Foodie logo" />
         <h1 className="text-white text-2xl font-bold self-center">FOODIE</h1>
         <button
-          className="ml-auto md:hidden"
+          className="p-2 ml-auto md:hidden"
           onClick={() => {
             setIsMenuToggled((prevIsMenuToggled) => !prevIsMenuToggled);
 
