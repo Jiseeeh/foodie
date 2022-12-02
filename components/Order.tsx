@@ -22,8 +22,10 @@ const Order: React.FC = () => {
   ];
 
   return (
-    <section id="order" className="min-h-screen text-white bg-dimmed-blue ">
-      <h1 className="py-16 font-bold text-3xl text-center  md:text-4xl">How to order</h1>
+    <section id="order" className="min-h-screen text-white bg-dimmed-blue">
+      <h1 className="pt-16 font-bold text-3xl text-center md:text-5xl">
+        How to order
+      </h1>
       <section className="min-h-screen grid md:grid-cols-3 md:place-items-center">
         {orderSteps.map((orderStep, index) => (
           <OrderStep key={index} {...orderStep} />
